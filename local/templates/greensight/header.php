@@ -65,7 +65,7 @@
 		<div class="main-menu-wrap">
 			<div class="container">
 				<div class="main-menu">
-					<?$APPLICATION->IncludeComponent("bitrix:menu", "", array(
+					<?$APPLICATION->IncludeComponent("bitrix:menu", "top", array(
 						"ROOT_MENU_TYPE" => "top",
 						"MENU_CACHE_TYPE" => "A",
 						"MENU_CACHE_TIME" => "3600",
@@ -77,16 +77,6 @@
 						"DELAY" => "N",
 						"ALLOW_MULTI_SELECT" => "N"
 					));?>
-<!--
-					<ul class="clearfix">
-						<li><a href="#">О компании</a></li>
-						<li><a href="#">Бренды</a></li>
-						<li><a href="#">Покупателям</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Карьера</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
--->
 				</div>
 			</div>
 		</div>

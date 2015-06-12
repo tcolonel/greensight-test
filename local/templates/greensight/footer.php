@@ -3,8 +3,8 @@
 				<div class="container">
 					<div class="clearfix">
 						<div class="f-menu clearfix pull-left">
-							<?$APPLICATION->IncludeComponent("bitrix:menu", "", array(
-								"ROOT_MENU_TYPE" => "top",
+							<?$APPLICATION->IncludeComponent("bitrix:menu", "bottom", array(
+								"ROOT_MENU_TYPE" => "bottom",
 								"MENU_CACHE_TYPE" => "A",
 								"MENU_CACHE_TIME" => "3600",
 								"MENU_CACHE_USE_GROUPS" => "Y",
@@ -15,19 +15,6 @@
 								"DELAY" => "N",
 								"ALLOW_MULTI_SELECT" => "N"
 							));?>
-<!--
-							<ul>
-								<li><a href="#">О компании</a></li>
-								<li><a href="#">Покупателям</a></li>
-								<li><a href="#">Франчайзинг</a></li>
-								<li><a href="#">Магазины</a></li>
-								<li><a href="#">Новости</a></li>
-								<li><a href="#">Оптовые продажи</a></li>
-								<li><a href="#">Бренды</a></li>
-								<li><a href="#">Карьера</a></li>
-								<li><a href="#">Контакты</a></li>
-							</ul>
--->
 						</div>
 						<div class="f-phone pull-right">
 							<div class="phone">+7 (495) 705 93 38</div>
