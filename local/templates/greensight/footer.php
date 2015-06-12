@@ -45,28 +45,13 @@
 				</div>
 			</div>
 		</div>
-		<div id="authorization" class="dialog">
-			<div class="dialog__overlay"></div>
-			<div class="dialog__content">
-				<div><button class="action" data-dialog-close></button></div>
-				<div class="auth-form-wrap">
-					<div class="title">личный кабинет</div>
-					<form action="" method="get" id="auth-form" class="form-horizontal">
-						<div class="form-group" style="">
-							<label for="form_ext_author_name" class="control-label">№ карты</label>
-							<input style="" type="text" placeholder="12345" id="form_ext_author_name" class="form-control" value="" name="author_name">
-						</div>
-						<div class="form-group" style="">
-							<label for="form_ext_author_name1" class="control-label">PIN</label>
-							<input style="" type="text" placeholder="12345" id="form_ext_author_name1" class="form-control" value="" name="author_name">
-						</div>
-						<div class="submit">
-							<input type="submit" name="submit" id="" value="Войти">
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
+		<?$APPLICATION->IncludeComponent("bitrix:system.auth.form", "authorization", array(
+			"COMPONENT_TEMPLATE" => "authorization",
+			"REGISTER_URL" => "",
+			"FORGOT_PASSWORD_URL" => "",
+			"PROFILE_URL" => "",
+			"SHOW_ERRORS" => "Y"
+		));?>
 		<div id="feedback" class="dialog">
 			<div class="dialog__overlay"></div>
 			<div class="dialog__content">
@@ -97,7 +82,6 @@
 				</div>
 			</div>
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="<?=SITE_TEMPLATE_PATH;?>/js/bootstrap.min.js"></script>
 		<script src="<?=SITE_TEMPLATE_PATH;?>/js/classie.js"></script>
 		<script src="<?=SITE_TEMPLATE_PATH;?>/js/modernizr.custom.js"></script>
