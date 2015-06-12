@@ -1,0 +1,67 @@
+<?
+$aMenuLinks = array(
+	array(
+		"О компании", 
+		"#", 
+		array(), 
+		array(), 
+		"" 
+	),
+	array(
+		"Покупателям", 
+		"#", 
+		array(), 
+		array(), 
+		"" 
+	),
+	array(
+		"Франчайзинг", 
+		"#", 
+		array(), 
+		array(), 
+		"" 
+	),
+	array(
+		"Магазины", 
+		"#", 
+		array(), 
+		array(), 
+		"" 
+	),
+	array(
+		"Новости", 
+		"#", 
+		array(), 
+		array(), 
+		"" 
+	),
+	array(
+		"Оптовые продажи", 
+		"#", 
+		array(), 
+		array(), 
+		"" 
+	),
+	array(
+		"Бренды", 
+		"#", 
+		array(), 
+		array(), 
+		"" 
+	),
+	array(
+		"Карьера", 
+		"#", 
+		array(), 
+		array(), 
+		"" 
+	),
+	array(
+		"Контакты", 
+		"#", 
+		array(), 
+		array(), 
+		"" 
+	),
+);
+?>
