@@ -284,48 +284,64 @@ $APPLICATION->SetTitle("JAMILCO");
 				"PATH" => "/include/career.php"
 			), false);//*/?>
 			<?$APPLICATION->IncludeFile('/include/career.php', array(), array("MODE"=>"html"));?>
-			<div class="news">
-				<div class="container">
-					<p class="h1">Новости</p>
-					<div class="news-wrap">
-						<div class="news-item-wrap">
-							<div class="news-item">
-								<a href="#">
-									<div class="news-img"><img src="<?=SITE_TEMPLATE_PATH;?>/img/n1.jpg" alt=""/></div>
-									<div class="news-text">
-										<div class="news-title">разве СЕЗОН ЮБОК КОНЧИЛСЯ?</div>
-										<div class="news-preview">Пора узнать, какие юбки будут в моде этой осенью!</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="news-item-wrap">
-							<div class="news-item">
-								<a href="#">
-									<div class="news-img"><img src="<?=SITE_TEMPLATE_PATH;?>/img/n2.jpg" alt=""/></div>
-									<div class="news-text">
-										<div class="news-title">ЦВЕТА ОСЕННЕГО СЕЗОНА!</div>
-										<div class="news-preview">Еще не знаете осенние тенденции? Мы подскажем!</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="news-item-wrap">
-							<div class="news-item">
-								<a href="#">
-									<div class="news-img"><img src="<?=SITE_TEMPLATE_PATH;?>/img/n3.jpg" alt=""/></div>
-									<div class="news-text">
-										<div class="news-title">ВСТРЕЧАЕМ ОСЕНЬ 2014 МОДНО!</div>
-										<div class="news-preview">Какие тенденции наблюдаются этой осенью?</div>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="submit">
-						<a href="#">Все новости</a>
-					</div>
-				</div>
-			</div>
+			<?$APPLICATION->IncludeComponent("bitrix:news.list", "news", array(
+				"COMPONENT_TEMPLATE" => ".default",
+				"IBLOCK_TYPE" => "news",	// Тип информационного блока (используется только для проверки)
+				"IBLOCK_ID" => "3",	// Код информационного блока
+				"NEWS_COUNT" => "999",	// Количество новостей на странице
+				"SORT_BY1" => "ID",	// Поле для первой сортировки новостей
+				"SORT_ORDER1" => "DESC",	// Направление для первой сортировки новостей
+				"SORT_BY2" => "SORT",	// Поле для второй сортировки новостей
+				"SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
+				"FILTER_NAME" => "",	// Фильтр
+				"FIELD_CODE" => array(	// Поля
+					0 => "ID",
+					1 => "CODE",
+					2 => "NAME",
+					3 => "PREVIEW_TEXT",
+					4 => "PREVIEW_PICTURE",
+					5 => "",
+				),
+				"PROPERTY_CODE" => array(	// Свойства
+					0 => "",
+					1 => "",
+				),
+				"CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
+				"DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+				"AJAX_MODE" => "N",	// Включить режим AJAX
+				"AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
+				"AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
+				"AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
+				"AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
+				"CACHE_TYPE" => "A",	// Тип кеширования
+				"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+				"CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
+				"CACHE_GROUPS" => "Y",	// Учитывать права доступа
+				"PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
+				"ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
+				"SET_TITLE" => "N",	// Устанавливать заголовок страницы
+				"SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
+				"SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
+				"SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
+				"SET_STATUS_404" => "N",	// Устанавливать статус 404, если не найдены элемент или раздел
+				"INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
+				"ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
+				"HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
+				"PARENT_SECTION" => "",	// ID раздела
+				"PARENT_SECTION_CODE" => "",	// Код раздела
+				"INCLUDE_SUBSECTIONS" => "N",	// Показывать элементы подразделов раздела
+				"DISPLAY_DATE" => "N",	// Выводить дату элемента
+				"DISPLAY_NAME" => "Y",	// Выводить название элемента
+				"DISPLAY_PICTURE" => "Y",	// Выводить изображение для анонса
+				"DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
+				"PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
+				"DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
+				"DISPLAY_BOTTOM_PAGER" => "N",	// Выводить под списком
+				"PAGER_TITLE" => "Новости",	// Название категорий
+				"PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
+				"PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
+				"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
+				"PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
+			), false);?>
 		</div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

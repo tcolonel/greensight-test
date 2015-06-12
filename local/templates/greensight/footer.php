@@ -97,9 +97,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- JavaScript
-		================================================== -->
-		<!--<script src="./js/jquery-1.8.3.min.js"></script>-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="<?=SITE_TEMPLATE_PATH;?>/js/bootstrap.min.js"></script>
 		<script src="<?=SITE_TEMPLATE_PATH;?>/js/classie.js"></script>
@@ -111,6 +108,5 @@
 		<script src="<?=SITE_TEMPLATE_PATH;?>/textarea/jquery-ui.min.js"></script>
 		<script src="<?=SITE_TEMPLATE_PATH;?>/textarea/cutext.js"></script>
 		<script src="<?=SITE_TEMPLATE_PATH;?>/js/main.js"></script>
-		<!-- Placed at the end of the document so the pages load faster -->
 	</body>
 </html>
