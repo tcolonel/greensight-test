@@ -14,6 +14,4 @@ if(!empty($arAuthResult['TYPE']) && $arAuthResult['TYPE'] == 'ERROR')
 	echo json_encode($APPLICATION->arAuthResult);
 else
 	echo json_encode(array('success'=>true));
-
-#echo '<p>$APPLICATION->arAuthResult</p><pre>'; print_r($APPLICATION->arAuthResult); echo '</pre>';
 ?>

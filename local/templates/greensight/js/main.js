@@ -48,6 +48,7 @@ $(function(){
     dlg.el.id = false;
     for(var i=0; i<dlgtrigger.length; i++){
         var somedialog = document.getElementById( dlgtrigger[i].getAttribute( 'data-dialog' ) );
+		console.log(somedialog);
         if(dlg.el.id != somedialog.id)
             dlg = new DialogFx( somedialog );
         dlgtrigger[i].addEventListener( 'click', dlg.toggle.bind(dlg) );

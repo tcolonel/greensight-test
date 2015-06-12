@@ -52,36 +52,24 @@
 			"PROFILE_URL" => "",
 			"SHOW_ERRORS" => "Y"
 		));?>
-		<div id="feedback" class="dialog">
-			<div class="dialog__overlay"></div>
-			<div class="dialog__content">
-				<div><button class="action" data-dialog-close></button></div>
-				<div class="auth-form-wrap">
-					<div class="title">Написать нам</div>
-					<form action="" method="get" id="auth-form1" class="form-horizontal">
-						<div class="form-group" style="">
-							<label for="form_ext_author_name13" class="control-label">Имя</label>
-							<input style="" type="text" placeholder="Константин" id="form_ext_author_name13" class="form-control" value="" name="author_name">
-						</div>
-						<div class="form-group" style="">
-							<label for="form_ext_author_name12" class="control-label">Эл. почта</label>
-							<input style="" type="text" id="form_ext_author_name12" class="form-control" value="" name="author_name">
-						</div>
-						<div class="form-group" style="">
-							<label for="form_ext_author_name123" class="control-label">Телефон</label>
-							<input style="" type="text" id="form_ext_author_name123" class="form-control" value="" name="author_name">
-						</div>
-						<div class="form-group" style="">
-							<label for="form_ext_author_name123" class="control-label">Сообщение</label>
-							<textarea class="form-control" name="text" id="qwerty"></textarea>
-						</div>
-						<div class="submit">
-							<input type="submit" name="submit" id="" value="Войти">
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
+		<?$APPLICATION->IncludeComponent("bitrix:form.result.new", "feedback", array(
+			"COMPONENT_TEMPLATE" => "feedback",
+			"WEB_FORM_ID" => "2",
+			"IGNORE_CUSTOM_TEMPLATE" => "N",
+			"USE_EXTENDED_ERRORS" => "Y",
+			"SEF_MODE" => "N",
+			"CACHE_TYPE" => "A",
+			"CACHE_TIME" => "3600",
+			"LIST_URL" => "",
+			"EDIT_URL" => "",
+			"SUCCESS_URL" => "",
+			"CHAIN_ITEM_TEXT" => "",
+			"CHAIN_ITEM_LINK" => "",
+			"VARIABLE_ALIASES" => array(
+				"WEB_FORM_ID" => "WEB_FORM_ID",
+				"RESULT_ID" => "RESULT_ID",
+			)
+		), false);?>
 		<script src="<?=SITE_TEMPLATE_PATH;?>/js/bootstrap.min.js"></script>
 		<script src="<?=SITE_TEMPLATE_PATH;?>/js/classie.js"></script>
 		<script src="<?=SITE_TEMPLATE_PATH;?>/js/modernizr.custom.js"></script>
