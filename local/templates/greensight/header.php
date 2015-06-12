@@ -18,7 +18,7 @@
 		<meta name="Developed By" content="Borisenko Valentin <vb@valentin-borisenko.com>" />
 		<meta name="author" content="Borisenko Valentin <vb@valentin-borisenko.com>" />		
 
-		<title>Главная</title>
+		<title><?$APPLICATION->ShowTitle();?></title>
 
 		<!-- Bootstrap core CSS -->
 		<link href="<?=SITE_TEMPLATE_PATH;?>/css/bootstrap.min.css" rel="stylesheet">

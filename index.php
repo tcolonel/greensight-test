@@ -1,5 +1,5 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");?>
 <?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("JAMILCO");
 ?> 
 		<div class="slider-main">
@@ -156,126 +156,63 @@ $APPLICATION->SetTitle("JAMILCO");
 					<div class="why-more"><a href="#">Узнать больше о нас</a></div>
 				</div>
 			</div>
-			<div class="brands">
-				<div class="container">
-					<p class="h1">Бренды</p>
-					<div class="brands-wrap">
-						<div class="row brand-images">
-							<div class="col-xs-3 p0">
-								<div class="brand-item">
-									<a href="#">
-										<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH;?>/img/gray_brands_logos/1.png" alt=""/>
-										<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH;?>/img/white_brands_logos/1.png" alt=""/>
-										<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH;?>/img/brands_hovers/1.png" alt=""/>
-									</a>
-								</div>
-							</div>
-							<div class="col-xs-3 p0">
-								<div class="brand-item">
-									<a href="#">
-										<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH;?>/img/gray_brands_logos/2.png" alt=""/>
-										<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH;?>/img/white_brands_logos/2.png" alt=""/>
-										<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH;?>/img/brands_hovers/2.png" alt=""/>
-									</a>
-								</div>
-							</div>
-							<div class="col-xs-3 p0">
-								<div class="brand-item">
-									<a href="#">
-										<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH;?>/img/gray_brands_logos/3.png" alt=""/>
-										<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH;?>/img/white_brands_logos/3.png" alt=""/>
-										<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH;?>/img/brands_hovers/3.png" alt=""/>
-									</a>
-								</div>
-							</div>
-							<div class="col-xs-3 p0">
-								<div class="brand-item">
-									<a href="#">
-										<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH;?>/img/gray_brands_logos/4.png" alt=""/>
-										<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH;?>/img/white_brands_logos/4.png" alt=""/>
-										<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH;?>/img/brands_hovers/4.png" alt=""/>
-									</a>
-								</div>
-							</div>
-							<div class="col-xs-3 p0">
-								<div class="brand-item">
-									<a href="#">
-										<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH;?>/img/gray_brands_logos/5.png" alt=""/>
-										<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH;?>/img/white_brands_logos/5.png" alt=""/>
-										<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH;?>/img/brands_hovers/5.png" alt=""/>
-									</a>
-								</div>
-							</div>
-							<div class="col-xs-3 p0">
-								<div class="brand-item">
-									<a href="#">
-										<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH;?>/img/gray_brands_logos/6.png" alt=""/>
-										<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH;?>/img/white_brands_logos/6.png" alt=""/>
-										<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH;?>/img/brands_hovers/6.png" alt=""/>
-									</a>
-								</div>
-							</div>
-							<div class="col-xs-3 p0">
-								<div class="brand-item">
-									<a href="#">
-										<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH;?>/img/gray_brands_logos/7.png" alt=""/>
-										<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH;?>/img/white_brands_logos/7.png" alt=""/>
-										<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH;?>/img/brands_hovers/7.png" alt=""/>
-									</a>
-								</div>
-							</div>
-							<div class="col-xs-3 p0">
-								<div class="brand-item">
-									<a href="#">
-										<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH;?>/img/gray_brands_logos/8.png" alt=""/>
-										<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH;?>/img/white_brands_logos/8.png" alt=""/>
-										<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH;?>/img/brands_hovers/8.png" alt=""/>
-									</a>
-								</div>
-							</div>
-							<div class="col-xs-3 p0">
-								<div class="brand-item">
-									<a href="#">
-										<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH;?>/img/gray_brands_logos/9.png" alt=""/>
-										<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH;?>/img/white_brands_logos/9.png" alt=""/>
-										<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH;?>/img/brands_hovers/9.png" alt=""/>
-									</a>
-								</div>
-							</div>
-							<div class="col-xs-3 p0">
-								<div class="brand-item">
-									<a href="#">
-										<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH;?>/img/gray_brands_logos/10.png" alt=""/>
-										<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH;?>/img/white_brands_logos/10.png" alt=""/>
-										<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH;?>/img/brands_hovers/10.png" alt=""/>
-									</a>
-								</div>
-							</div>
-							<div class="col-xs-3 p0">
-								<div class="brand-item">
-									<a href="#">
-										<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH;?>/img/gray_brands_logos/11.png" alt=""/>
-										<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH;?>/img/white_brands_logos/11.png" alt=""/>
-										<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH;?>/img/brands_hovers/11.png" alt=""/>
-									</a>
-								</div>
-							</div>
-							<div class="col-xs-3 p0">
-								<div class="brand-item">
-									<a href="#">
-										<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH;?>/img/gray_brands_logos/12.png" alt=""/>
-										<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH;?>/img/white_brands_logos/12.png" alt=""/>
-										<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH;?>/img/brands_hovers/12.png" alt=""/>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="submit">
-						<a href="#">Все бренды</a>
-					</div>
-				</div>
-			</div>
+			<?$APPLICATION->IncludeComponent("bitrix:news.list", "brands", array(
+				"COMPONENT_TEMPLATE" => "brands",
+				"IBLOCK_TYPE" => "brands",
+				"IBLOCK_ID" => "29",
+				"NEWS_COUNT" => "12",
+				"SORT_BY1" => "RAND",
+				"SORT_ORDER1" => "DESC",
+				"SORT_BY2" => "SORT",
+				"SORT_ORDER2" => "ASC",
+				"FILTER_NAME" => "",
+				"FIELD_CODE" => array(
+					0 => "ID",
+					1 => "CODE",
+					2 => "NAME",
+				),
+				"PROPERTY_CODE" => array(
+					0 => "LOGO",
+					1 => "LOGO_ACTIVE",
+					2 => "LOGO_HOVER",
+				),
+				"CHECK_DATES" => "Y",
+				"DETAIL_URL" => "",
+				"AJAX_MODE" => "N",
+				"AJAX_OPTION_JUMP" => "N",
+				"AJAX_OPTION_STYLE" => "Y",
+				"AJAX_OPTION_HISTORY" => "N",
+				"AJAX_OPTION_ADDITIONAL" => "",
+				"CACHE_TYPE" => "A",
+				"CACHE_TIME" => "36000000",
+				"CACHE_FILTER" => "N",
+				"CACHE_GROUPS" => "Y",
+				"PREVIEW_TRUNCATE_LEN" => "",
+				"ACTIVE_DATE_FORMAT" => "d.m.Y",
+				"SET_TITLE" => "N",
+				"SET_BROWSER_TITLE" => "N",
+				"SET_META_KEYWORDS" => "N",
+				"SET_META_DESCRIPTION" => "N",
+				"SET_STATUS_404" => "N",
+				"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+				"ADD_SECTIONS_CHAIN" => "N",
+				"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+				"PARENT_SECTION" => "",
+				"PARENT_SECTION_CODE" => "",
+				"INCLUDE_SUBSECTIONS" => "N",
+				"DISPLAY_DATE" => "N",
+				"DISPLAY_NAME" => "Y",
+				"DISPLAY_PICTURE" => "Y",
+				"DISPLAY_PREVIEW_TEXT" => "Y",
+				"PAGER_TEMPLATE" => ".default",
+				"DISPLAY_TOP_PAGER" => "N",
+				"DISPLAY_BOTTOM_PAGER" => "N",
+				"PAGER_TITLE" => "Новости",
+				"PAGER_SHOW_ALWAYS" => "N",
+				"PAGER_DESC_NUMBERING" => "N",
+				"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+				"PAGER_SHOW_ALL" => "N"
+			),false);?>
 			<?/*$APPLICATION->IncludeComponent("bitrix:main.include", ".default", array(
 				"AREA_FILE_SHOW" => "file",
 				"AREA_FILE_SUFFIX" => "inc",
@@ -285,7 +222,7 @@ $APPLICATION->SetTitle("JAMILCO");
 			), false);//*/?>
 			<?$APPLICATION->IncludeFile('/include/career.php', array(), array("MODE"=>"html"));?>
 			<?$APPLICATION->IncludeComponent("bitrix:news.list", "news", array(
-				"COMPONENT_TEMPLATE" => ".default",
+				"COMPONENT_TEMPLATE" => "news",
 				"IBLOCK_TYPE" => "news",	// Тип информационного блока (используется только для проверки)
 				"IBLOCK_ID" => "3",	// Код информационного блока
 				"NEWS_COUNT" => "999",	// Количество новостей на странице
