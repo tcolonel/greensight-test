@@ -41,7 +41,7 @@ $this->setFrameMode(true);
 							<?if($arParams["DISPLAY_NAME"] != "N" && $arItem["NAME"]):?>
 								<div class="news-title"><?=$arItem["NAME"];?></div>
 							<?endif;?>
-							<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
+							<?if($arParams["DISPLAY_PREVIEW_TEXT"] != "N" && $arItem["PREVIEW_TEXT"]):?>
 								<div class="news-preview"><?=$arItem["PREVIEW_TEXT"];?></div>
 							<?endif;?>
 							</div>

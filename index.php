@@ -4,82 +4,67 @@ $APPLICATION->SetTitle("JAMILCO");
 ?> 
 <div class="slider-main">
 	<div class="slider">
-		<div class="sl-item">
-			<div class="img-wrap">
-				<img src="<?=SITE_TEMPLATE_PATH;?>/img/sl1.jpg" alt=""/>
-			</div>
-			<div class="text">
-				<div class="title">title1</div>
-				<div class="preview">preview1</div>
-				<div class="more"><a href="#">Подробнее</a></div>
-			</div>
-		</div>
-		<div class="sl-item">
-			<div class="img-wrap">
-				<img src="<?=SITE_TEMPLATE_PATH;?>/img/sl2.jpg" alt=""/>
-			</div>
-			<div class="text">
-				<div class="title">title2</div>
-				<div class="preview">preview2</div>
-				<div class="more"><a href="#">Подробнее</a></div>
-			</div>
-		</div>
-		<div class="sl-item">
-			<div class="img-wrap">
-				<img src="<?=SITE_TEMPLATE_PATH;?>/img/sl1.jpg" alt=""/>
-			</div>
-			<div class="text">
-				<div class="title">Совершай покупки в NAF NAF и получай подарки!</div>
-				<div class="preview">При покупке 2-х изделий мы рады подарить вам изящную бижутерию, при покупке трех – яркий лак для ногтей, а при покупке 4-х и более – чехол для смартфона!</div>
-				<div class="more"><a href="#">Подробнее</a></div>
-			</div>
-		</div>
-		<div class="sl-item">
-			<div class="img-wrap">
-				<img src="<?=SITE_TEMPLATE_PATH;?>/img/sl2.jpg" alt=""/>
-			</div>
-			<div class="text">
-				<div class="title">title4</div>
-				<div class="preview">preview4</div>
-				<div class="more"><a href="#">Подробнее</a></div>
-			</div>
-		</div>
-		<div class="sl-item">
-			<div class="img-wrap">
-				<img src="<?=SITE_TEMPLATE_PATH;?>/img/sl1.jpg" alt=""/>
-			</div>
-			<div class="text">
-				<div class="title">title5</div>
-				<div class="preview">preview5</div>
-				<div class="more"><a href="#">Подробнее</a></div>
-			</div>
-		</div>
-		<div class="sl-item">
-			<div class="img-wrap">
-				<img src="<?=SITE_TEMPLATE_PATH;?>/img/sl2.jpg" alt=""/>
-			</div>
-			<div class="text">
-				<div class="title">title6</div>
-				<div class="preview">preview6</div>
-				<div class="more"><a href="#">Подробнее</a></div>
-			</div>
-		</div>
-		<div class="sl-item">
-			<div class="img-wrap">
-				<img src="<?=SITE_TEMPLATE_PATH;?>/img/sl1.jpg" alt=""/>
-			</div>
-			<div class="text">
-				<div class="title">title7</div>
-				<div class="preview">preview7</div>
-				<div class="more"><a href="#">Подробнее</a></div>
-			</div>
-		</div>
+	<?$APPLICATION->IncludeComponent("bitrix:news.list", "sliders.top", array(
+		"COMPONENT_TEMPLATE" => "sliders",
+		"IBLOCK_TYPE" => "sliders",
+		"IBLOCK_ID" => "30",
+		"NEWS_COUNT" => "7",
+		"SORT_BY1" => "RAND",
+		"SORT_ORDER1" => "DESC",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER2" => "ASC",
+		"FILTER_NAME" => "",
+		"FIELD_CODE" => array(
+			0 => "ID",
+			1 => "CODE",
+			2 => "NAME",
+			3 => "PREVIEW_TEXT",
+			4 => "PREVIEW_PICTURE",
+		),
+		"PROPERTY_CODE" => array(),
+		"CHECK_DATES" => "Y",
+		"DETAIL_URL" => "",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "36000000",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"PREVIEW_TRUNCATE_LEN" => "",
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"SET_TITLE" => "N",
+		"SET_BROWSER_TITLE" => "N",
+		"SET_META_KEYWORDS" => "N",
+		"SET_META_DESCRIPTION" => "N",
+		"SET_STATUS_404" => "N",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+		"PARENT_SECTION" => "",
+		"PARENT_SECTION_CODE" => "",
+		"INCLUDE_SUBSECTIONS" => "N",
+		"DISPLAY_DATE" => "N",
+		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"PAGER_TEMPLATE" => ".default",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"PAGER_TITLE" => "Новости",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N"
+	), false);?>
 	</div>
 	<div class="slider-bottom">
 		<?
 		$arSliderFilterL = array('PROPERTY_SLIDER_TYPE_VALUE'=>'L');
 		?>
-		<?$APPLICATION->IncludeComponent("bitrix:news.list", "sliders", array(
+		<?$APPLICATION->IncludeComponent("bitrix:news.list", "sliders.bottom", array(
 			"SLIDER_TYPE" => 'L',
 			"COMPONENT_TEMPLATE" => "sliders",
 			"IBLOCK_TYPE" => "sliders",
@@ -139,7 +124,7 @@ $APPLICATION->SetTitle("JAMILCO");
 		<?
 		$arSliderFilterR = array('PROPERTY_SLIDER_TYPE_VALUE'=>'R');
 		?>
-		<?$APPLICATION->IncludeComponent("bitrix:news.list", "sliders", array(
+		<?$APPLICATION->IncludeComponent("bitrix:news.list", "sliders.bottom", array(
 			"SLIDER_TYPE" => 'R',
 			"COMPONENT_TEMPLATE" => "sliders",
 			"IBLOCK_TYPE" => "sliders",
@@ -337,12 +322,8 @@ $APPLICATION->SetTitle("JAMILCO");
 			2 => "NAME",
 			3 => "PREVIEW_TEXT",
 			4 => "PREVIEW_PICTURE",
-			5 => "",
 		),
-		"PROPERTY_CODE" => array(	// Свойства
-			0 => "",
-			1 => "",
-		),
+		"PROPERTY_CODE" => array(),
 		"CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
 		"DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
 		"AJAX_MODE" => "N",	// Включить режим AJAX
